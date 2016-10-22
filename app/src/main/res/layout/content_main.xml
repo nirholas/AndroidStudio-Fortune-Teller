@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fortune_description"
+        android:gravity="center"
+        android:textSize="@dimen/description_text_size"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fortunateImage"
+        android:src="@drawable/img_crystal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/descriptionText"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/fortuneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fortunateImage"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/fortune_text_size"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <Button
+        android:id="@+id/fortuneButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fortuneText"
+        android:text="What's my fortune?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
